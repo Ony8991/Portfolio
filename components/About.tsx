@@ -29,19 +29,23 @@ export default function About() {
           <div>
             <p className="text-[#94A3B8] text-lg leading-relaxed mb-6">
               Je suis <span className="text-white font-medium">Ony Randriambololona</span>,
-              étudiant en dernière année d'Intelligence Artificielle et Machine Learning
-              à Maurice. Passionné par la technologie sous toutes ses formes, je me
-              spécialise dans le développement web fullstack JavaScript.
+              étudiant en dernière année d'<span className="text-white font-medium">Intelligence Artificielle et Machine Learning</span> à Maurice.
+              Curieux et polyvalent, je combine le développement web moderne avec une solide
+              culture data et ML.
             </p>
             <p className="text-[#94A3B8] text-lg leading-relaxed mb-6">
-              Mon parcours en IA/ML me donne une vision plus large du développement
-              je comprends non seulement comment construire des applications web performantes,
-              mais aussi comment intégrer des modèles intelligents dans des produits réels.
+              Ma formation en IA/ML me donne une vision transversale : je sais construire des{" "}
+              <span className="text-white font-medium">applications web fullstack performantes</span>,
+              analyser des données pour en extraire des insights, et comprendre comment
+              intégrer des{" "}
+              <span className="text-white font-medium">modèles intelligents dans des produits réels</span>.
             </p>
             <p className="text-[#94A3B8] text-lg leading-relaxed mb-10">
-              Je suis ouvert à toutes les opportunités : développement web fullstack,
-              data analyst, ou développeur ML junior. Mon objectif est de rejoindre
-              une équipe où je peux apprendre vite et apporter de la valeur dès le premier jour.
+              Que ce soit en tant que <span className="text-[#6366F1] font-medium">Développeur Fullstack JS</span>,{" "}
+              <span className="text-[#22D3EE] font-medium">Data Analyst</span> ou{" "}
+              <span className="text-[#6366F1] font-medium">ML Developer Junior</span>,
+              mon objectif est simple : rejoindre une équipe ambitieuse où je peux{" "}
+              <span className="text-white font-medium">apprendre vite et créer de la valeur dès le premier jour</span>.
             </p>
 
             {/* Infos de contact */}
@@ -59,7 +63,7 @@ export default function About() {
           {/* Cards statistiques */}
           <div className="grid grid-cols-2 gap-4">
             {[
-              { number: "3", label: "Projets\ncomplétés", color: "#6366F1" },
+              { number: "2", label: "Projets\ncomplétés", color: "#6366F1" },
               { number: "22", label: "Tests\nautomatisés", color: "#22D3EE" },
               { number: "15+", label: "Routes\nAPI REST", color: "#6366F1" },
               { number: "100%", label: "Commits\nconventionnels", color: "#22D3EE" },

@@ -44,7 +44,7 @@ export default function Skills() {
             Compétences
           </p>
           <h2 className="text-3xl md:text-4xl font-bold text-white">
-            Ma stack technique
+            Stack technique
           </h2>
           <p className="text-[#94A3B8] mt-4 max-w-xl mx-auto">
             Les technologies que j'utilise pour construire des applications

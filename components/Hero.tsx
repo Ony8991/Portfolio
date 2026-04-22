@@ -19,10 +19,10 @@ export default function Hero() {
       {/* Contenu */}
       <div className="relative z-10 max-w-6xl mx-auto px-6 text-center">
         {/* Badge disponibilité */}
-        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[#6366F1]/30 bg-[#6366F1]/10 text-[#6366F1] text-sm font-medium mb-8">
-          <span className="w-2 h-2 rounded-full bg-[#22D3EE] animate-pulse" />
-          Disponible pour des opportunités
-        </div>
+        <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[#22D3EE]/30 bg-[#22D3EE]/10 text-[#22D3EE] text-sm font-medium mb-8">
+  <span className="w-2 h-2 rounded-full bg-[#22D3EE] animate-pulse" />
+  Disponible pour des opportunités — Stage / CDI / Freelance
+</div>
 
         {/* Nom */}
         <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
@@ -33,18 +33,27 @@ export default function Hero() {
         </h1>
 
         {/* Titre */}
-        <p className="text-xl md:text-2xl text-[#94A3B8] font-medium mb-6">
-          Développeur{" "}
-          <span className="text-[#6366F1]">Fullstack JavaScript</span>{" "}
-          Junior
-        </p>
 
-        {/* Description */}
-        <p className="text-[#94A3B8] text-lg max-w-2xl mx-auto mb-10 leading-relaxed">
-          Étudiant en dernière année d'IA/ML à Maurice, passionné par le développement
-          web moderne. Je construis des applications complètes avec React, Next.js,
-          Node.js et MongoDB.
-        </p>
+{/* Sous-titre deux lignes */}
+<p className="text-xl md:text-2xl text-white font-semibold mb-2">
+  Développeur & Data Scientist
+</p>
+<p className="text-lg md:text-xl font-medium mb-6">
+  <span className="text-[#6366F1]">Fullstack JS</span>
+  <span className="text-[#475569]"> • </span>
+  <span className="text-[#22D3EE]">Data Analyst</span>
+  <span className="text-[#475569]"> • </span>
+  <span className="text-[#6366F1]">ML Junior</span>
+</p>
+
+{/* Description */}
+<p className="text-[#94A3B8] text-lg max-w-2xl mx-auto mb-10 leading-relaxed">
+  Étudiant en dernière année d'IA/ML à Maurice. Je construis des{" "}
+  <span className="text-white font-medium">applications web performantes</span>{" "}
+  avec React, Next.js et Node.js, et j'analyse des données pour{" "}
+  <span className="text-white font-medium">créer des insights actionnables</span>.
+  Curieux, autonome et toujours prêt à relever de nouveaux défis.
+</p>
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
@@ -54,7 +63,12 @@ export default function Hero() {
           >
             Voir mes projets
           </Link>
-
+<Link
+  href="#contact"
+  className="px-8 py-3 rounded-lg border border-[#22D3EE] text-[#22D3EE] font-medium hover:bg-[#22D3EE] hover:text-[#0F172A] transition-all duration-200 hover:scale-105"
+>
+  Me contacter
+</Link>
           <a
             href="/cv.pdf"
             download
@@ -91,12 +105,6 @@ export default function Hero() {
           >
             <FiMail size={24} />
           </a>
-        </div>
-
-        {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center gap-2 text-[#94A3B8]">
-          <span className="text-xs">Scroll</span>
-          <div className="w-px h-8 bg-gradient-to-b from-[#94A3B8] to-transparent animate-pulse" />
         </div>
       </div>
     </section>
