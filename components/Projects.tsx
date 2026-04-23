@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { FiGithub, FiExternalLink } from "react-icons/fi";
+import { FiGithub, FiExternalLink, FiFileText } from "react-icons/fi";
 
 const projects = [
   {
@@ -19,6 +19,7 @@ const projects = [
     tech: ["Power BI", "SQL", "Excel"],
     github: null,
     demo: "https://app.powerbi.com/links/2f1xSfBhDB?ctid=5ab99b60-3f35-47ec-89c3-0db26dd72d06&pbi_source=linkShare",
+    pdf: "/dashboard.pdf",
   },
 ];
 
@@ -92,6 +93,17 @@ export default function Projects() {
                     Démo
                   </Link>
                 )}
+                {project.pdf && (
+  <Link
+    href={project.pdf}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex items-center gap-2 text-[#94A3B8] hover:text-[#A78BFA] transition-colors duration-200 text-sm font-medium"
+  >
+    <FiFileText size={16} />
+    PDF
+  </Link>
+)}
               </div>
             </div>
           ))}
