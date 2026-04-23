@@ -18,7 +18,7 @@ const projects = [
       "Tableaux de bord interactifs pour l'analyse des données commerciales avec visualisation claire.",
     tech: ["Power BI", "SQL", "Excel"],
     github: null,
-    demo: null,
+    demo: "https://app.powerbi.com/links/2f1xSfBhDB?ctid=5ab99b60-3f35-47ec-89c3-0db26dd72d06&pbi_source=linkShare",
   },
 ];
 
